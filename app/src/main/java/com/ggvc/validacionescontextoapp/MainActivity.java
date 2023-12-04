@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
         //ACTIVIDAD
         edSignoZodiacal=findViewById(R.id.txtSignoZodiacal);
         btIr=findViewById(R.id.btnEnviar);
-        String signo=edSignoZodiacal.getText().toString();
+
         btIr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                String signo=edSignoZodiacal.getText().toString();
                 //PASO 1) INSTANCIA DE OBJETO BUNDLE QUE PERMITE ESTRUCTURAR ENVÍO DE INFORMACIÓN
                 Bundle parametrosEnvio=new Bundle();
                 //CREO LA ESTRUCTURA A TRAVÉS DEL MÉTODO PUT
